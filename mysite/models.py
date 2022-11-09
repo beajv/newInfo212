@@ -18,7 +18,7 @@ class Customer(models.Model):
      age=models.IntegerField()
 
      def __str__(self): 
-       return self.name+' '+address+' '+age
+       return self.name+' '+self.address+' '+self.age
 
 class Employee(models.Model):
      name = models.CharField(max_length=50)
@@ -26,4 +26,4 @@ class Employee(models.Model):
      branch=models.CharField(max_length=50)
 
      def __str__(self): 
-       return self.name+' '+address+' '+branch
+       return self.name+' '+self.address+' '+self.branch
